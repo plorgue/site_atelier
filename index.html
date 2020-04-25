@@ -27,19 +27,15 @@
 	<header>
 		<!-- Barre de navigation -->
 		<nav>
-			<div>
-				<a href="#">
-					<img id="menu-button" src="img/img-menu.svg">
-				</a>
-				<a href="#">
-					<img id="img-logo" src="img/logosite.png">
-				</a>
-				<ul  class="margin-right">
-					<li id="acc"><a class="textbar" href="#">Accueil</a></li>
-					<li id="rea"><a class="textbar" href="#nos_realisation">Nos réalisations</a></li>
-					<li id="ctt"><a class="textbar" href="contact.html">Nous contacter</a></li>
-				</ul>
-			</div>
+			<img id="show-sidenav"  src="img/img-menu.svg" alt="Afficher menu latéral">
+			<a href="index.html">
+				<img id="img-logo" src="img/logosite.png">
+			</a>
+			<ul  class="margin-right">
+				<li id="acc"><a class="textbar" href="index.html">Accueil</a></li>
+				<li id="rea"><a class="textbar" href="index.html#nos_realisations">Nos réalisations</a></li>
+				<li id="ctt"><a class="textbar" href="contact.html">Nous contacter</a></li>
+			</ul>
 		</nav>
 		<!-- Menu des réalisations -->
 		<ul id="nav-rea">
@@ -51,11 +47,11 @@
 		</ul>
 		<!-- Menu latérale pour petit écran -->
 		<div  id="sidenav">
-			<a href="#">
-				<img id="closebtn" src="img/img-cls.svg">
-			</a>
-			<a href="#">Accueil</a>
-			<a href="#nos_realisation">Nos réalisations</a>
+			<div id="hide-sidenav-btn-container">
+				<img id="hide-sidenav" src="img/img-cls.svg" alt="Enlever menu latérale">
+			</div>
+			<a href="index.html">Accueil</a>
+			<a href="index.html#nos_realisations">Nos réalisations</a>
 			<a href="contact.html">Nous contacter</a>
 		</div>
 	</header>
@@ -76,47 +72,47 @@
 	</div>
 
 	<!-- Deuxième partie (2/4) -->
-	<section>
-		<h2>Notre atelier</h2> <!-- TODO: intégrer au div en dessous-->
-		<div id="inter-parallax">
+	<section id="inter-parallax">
+			<h2 class="title-section" >Notre atelier</h2>
 
 			<article id="flex-container">
 				<p>La structure de l'entreprise permet la mise en oeuvre de méthodes <strong>traditionnelles et artisanales</strong> avec les nouveaux <strong>outils industriels</strong>. Cela garantit la qualité de nos produits ainsi qu'une réalisation de menuiseries au plus proche de vos besoins et de vos envies. Avis de conformité FCBA.</p>
+				<div>
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 4</div>
+							<img src="img/index/quatre_face_1_rogné.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 4</div>
+							<img src="img/index/quatre_face_2_rogné.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">3 /4</div>
+							<img src="img/index/p3.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">4 /4</div>
+							<img src="img/index/p6.jpg" style="width:100%">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br><!-- TODO: A supprimer -->
+
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+					</div>
+				</div>
 			</article>
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<div class="numbertext">1 / 4</div>
-					<img src="img/index/quatre_face_1_rogné.jpg" style="width:100%">
-				</div>
 
-				<div class="mySlides fade">
-					<div class="numbertext">2 / 4</div>
-					<img src="img/index/quatre_face_2_rogné.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides fade">
-					<div class="numbertext">3 /4</div>
-					<img src="img/index/p3.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides fade">
-					<div class="numbertext">4 /4</div>
-					<img src="img/index/p6.jpg" style="width:100%">
-				</div>
-
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-
-			<br><!-- TODO: A supprimer -->
-
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-				<span class="dot" onclick="currentSlide(3)"></span>
-				<span class="dot" onclick="currentSlide(4)"></span>
-			</div>
-		</div>
 	</section>
 
   <div class="parallax">
@@ -130,9 +126,9 @@
 	</section>
 
 	<!-- Quatrième partie (4/4) -->
-	<section>
+	<section id="nos_realisations">
 		<!-- TODO: Replacer ce titre -->
-		<h2 id="nos_realisation">Nos  portes, fênetres, volets, portails et portes de garage sont conçus selon vos besoins</h2>
+		<h2 class="title-section">Nos  portes, fênetres, volets, portails et portes de garage sont conçus selon vos besoins</h2>
 		<div class="mrow">
 			<div class="carte-container">
 				<div class="carte">
@@ -201,7 +197,7 @@
 	<script type="text/javascript" src="js/script-base.js"></script>
    	<script type="text/javascript">
    		var slideIndex = 1;
-		showSlides(slideIndex);
+			showSlides(slideIndex);
 
 		// Next/previous controls
 		function plusSlides(n) {
@@ -228,9 +224,6 @@
   			dots[slideIndex-1].className += " active";
 		}
    		$(document).ready(function(){
-   			/*var cardWidth = $(document.getElementById("port")).width();
-   			document.getElementById("port").style.marginLeft = parseInt((innerWidth-cardWidth)/2)+"px";*/
-
 			window.onscroll=function() {myFunction()};
 			function myFunction(){
 				if(window.matchMedia("screen and (min-width:801px").matches){
@@ -242,7 +235,7 @@
 				}
 			}
 
-   			$('.div-effect').mouseenter(function(){
+   		$('.div-effect').mouseenter(function(){
 				$(this).css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2)');
 			});
 

@@ -1,9 +1,10 @@
-$(document).ready(function(){			
-	$('#menu-button').click(function(){
-		document.getElementById("sidenav").style.width = '300px';
+$(document).ready(function(){
+	$('#show-sidenav').on('click',function(){
+		$('#sidenav').css('width','65vw');
 	});
-	$('#closebtn').click(function(){
-		document.getElementById("sidenav").style.width = '0px';
+
+	$('#hide-sidenav').on('click',function(){
+		$('#sidenav').css('width','0vw');
 	});
 	$('#rea').mouseenter(function(){
 		document.getElementById("nav-rea").style.display = 'block';

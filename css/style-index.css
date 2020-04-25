@@ -15,6 +15,16 @@ p
 	background-color: rgba(0,0,0,0.2);
 }
 
+
+.title-section{
+	padding: 32px 0 32px 3%;
+	width: calc(100% - 64px);
+	margin: auto;
+	font-weight: normal;
+	font-size: 34px;
+	color: #f2f2f2;
+}
+
 /* first part */
 #after-bar
 {
@@ -240,12 +250,8 @@ p
 {
 	color: #969C90;
 	margin: 0;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	padding-left: 64px;
+	padding: 32px 0 32px 64px;
 }
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
