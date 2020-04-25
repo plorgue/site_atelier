@@ -1,0 +1,22 @@
+.carousel .carousel-item
+{
+	width: 500px !important;
+}
+
+.carousel
+{
+	height: 675px !important;
+	top: -100px !important;
+}
+@media only screen and (min-width: 802px)
+{
+	#text1
+	{
+		margin-top: -150px !important;
+	}
+}
+/* small screen slide */
+.slide img
+{
+	width: 80vw;
+};

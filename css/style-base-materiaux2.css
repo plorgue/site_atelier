@@ -1,0 +1,136 @@
+.content h3,p
+{
+	margin: 0;
+}
+
+#main-container img
+{
+	position: absolute;
+	height: 317px;
+	width: 400px;
+}
+.content
+{
+	height: 217px;
+	width: 300px;
+	padding: 50px;
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px !important;
+	font-family: roboto, sans-serif;
+	color: #444 !important;
+	font-weight: normal !important;
+}
+#title
+{
+	font-size: 24px;
+	margin: 25px 0 25px 0;
+}
+#bois,#alu,#pvc,#mixte,#block
+{
+	display: inline;
+}
+#alu,#pvc,#mixte
+{
+	margin-left: 400px;
+	padding-left: 2vw;
+}
+#main-container
+{
+	width: 1200px;
+	height: 317px;
+	padding-right: 4vw;
+	margin: 30px auto 0 auto;
+}
+@media only screen and (min-width: 831px){
+	#block
+	{
+		width: 800px;
+		display: block;
+		position: relative;
+		padding-top: 1vw;
+		margin: 317px auto;
+	}
+	#mixte
+	{
+		padding-left: 0;
+		margin-left: 0;
+	}
+	#main-container
+	{
+		width: 800px;
+		height: 634px;
+		padding: 0 2vw 2vw 0;
+	}
+} 
+
+@media only screen and (max-width: 830px){
+	#block
+	{
+		height: 800px;
+		width: 400px;
+		position: relative;
+		padding-top: 3vw;
+		margin: 634px auto;
+	}
+ 	#bois, #alu, #pvc,#mixte
+ 	{
+ 		width: 400px;
+ 		display: block;
+ 		position: relative;
+ 		padding-top: 1vw;
+ 		margin: auto ;
+ 	}
+ 	#alu, #pvc,#mixte
+ 	{
+ 		margin-top: 317px;
+ 		padding-left: 0;
+ 	}
+ 		#main-container
+ 	{
+ 		width: 400px;
+ 		height: 1268px;
+ 		padding: 0 0 4vw 0;
+ 	}
+ }
+
+ @media only screen and (max-width: 499px)
+{
+	#bois, #alu, #pvc, #mixte
+	{ 
+		width: 70vw;
+		height: 60vw;
+		display: block;
+		position: relative;
+		padding-top: 1vw;
+		margin: auto;
+	}
+
+	#alu, #pvc, #mixte
+	{
+		margin-top: 5vw;
+		padding-left: 0;
+	}
+
+	#main-container
+	{
+		width: 70vw;
+		height: 255vw;
+		padding: 0;
+	}
+
+	#main-container img
+	{
+		width: 70vw;
+		height: 60vw;
+	}
+
+	.content
+	{
+		height: 44vw;
+		width: 54vw;
+		padding: 8vw;
+		font-size: 4vw !important;
+	}
+}

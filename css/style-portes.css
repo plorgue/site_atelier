@@ -1,0 +1,16 @@
+#text1
+{
+  	margin-top: -130px;
+}
+
+#text2
+{
+	margin-top: -20px;
+}
+
+/* small screen slide */
+.slide img
+{
+	height: 400px;
+	width: 350px;
+}

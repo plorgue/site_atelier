@@ -1,0 +1,62 @@
+#fst-carousel
+{
+	height: 585px;
+	top: -100px;
+}
+
+#fst-carousel .carousel-item
+{
+	width: 	600px !important;
+}
+
+#container1
+{
+	height: 430px;
+	display: flex;
+	padding: 0 3vw 3vw 3vw;
+	justify-content: flex-end;
+}
+
+#sd-carousel
+{
+	width: 52vw;
+	margin: 0;
+}
+
+#text-desc
+{
+	width:	40%;
+	margin-top: 10%;
+	color: #f2f2f2;
+	font-weight: lighter;
+	font-size: 24px;
+}
+
+@media screen and (max-width: 801px)
+{
+	#text-desc
+	{
+		padding-top: 32px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#container1
+	{
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 500px)
+{
+	#text-desc
+	{
+		font-size: 19px !important;
+	}
+}
+
+/* small screen slide */
+.slide img
+{
+	width: 80vw;
+};

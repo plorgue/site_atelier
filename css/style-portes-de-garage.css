@@ -1,0 +1,58 @@
+.carousel .carousel-item
+{
+	width: 500px !important;
+}
+
+.carousel
+{
+	height: 675px !important;
+	top: -140px !important;
+}
+
+#liste-desc li
+{
+  	color: #f2f2f2;
+  	font-weight: lighter;
+  	font-size: 24px;
+}
+
+#liste-desc
+{
+	position: relative;
+ 	width: 40vw;
+  	margin: 0 auto 0 auto;
+}
+@media screen and (max-width: 500px)
+{
+
+  #liste-desc li
+  {
+    font-size: 19px !important;
+  }
+}
+
+@media screen and (max-width: 890px)
+{
+
+  #text1
+  {
+    text-align: left !important;
+  }
+  #liste-desc
+  {
+  	width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 802px)
+{
+	#text1
+	{
+		margin-top: -220px !important;
+	}
+}
+/*slide*/
+.slide img
+{
+	width: 80vw;
+};

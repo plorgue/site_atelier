@@ -1,0 +1,126 @@
+.content h3,p
+{
+	margin: 0;
+}
+
+#main-container img
+{
+	position: absolute;
+	height: 317px;
+	width: 400px;
+}
+.content
+{
+	height: 217px;
+	width: 300px;
+	padding: 50px;
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px !important;
+	font-family: roboto, sans-serif;
+	color: #444 !important;
+	font-weight: normal !important;
+}
+#title
+{
+	font-size: 24px;
+	margin: 25px 0 25px 0;
+}
+#bois,#alu,#pvc
+{
+	display: inline;
+}
+#alu,#pvc
+{
+	margin-left: 400px;
+	padding-left: 2vw;
+}
+#main-container
+{
+	width: 1200px;
+	height: 317px;
+	padding-right: 4vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media only screen and (max-width: 1260px) and (min-width: 831px){
+	#pvc
+	{
+		width: 400px;
+		display: block;
+		position: relative;
+		margin-top: 317px;
+		padding-top: 1vw;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#main-container
+	{
+		width: 800px;
+ 		height: 684px;
+ 		padding-right: 2vw;
+ 	}
+} 
+@media only screen and (max-width: 830px) and (min-width: 500px){
+	#bois, #alu, #pvc
+ 	{
+ 		width: 400px;
+ 		display: block;
+ 		position: relative;
+ 		padding-top: 1vw;
+ 		margin-right: auto;
+ 		margin-left: auto;
+ 	}
+ 	#alu, #pvc
+ 	{
+ 		margin-top: 317px;
+ 		padding-left: 0;
+ 	}
+ 	#main-container
+ 	{
+ 		width: 400px;
+ 		height: 1000px;
+ 		padding: 0;
+ 	}
+}
+
+@media only screen and (max-width: 499px)
+{
+	#bois, #alu, #pvc
+	{ 
+		width: 70vw;
+		height: 60vw;
+		display: block;
+		position: relative;
+		padding-top: 1vw;
+		margin: auto;
+	}
+
+	#alu, #pvc
+	{
+		margin-top: 5vw;
+		padding-left: 0;
+	}
+
+	#main-container
+	{
+		width: 70vw;
+		height: 190vw;
+		padding: 0;
+	}
+
+	#main-container img
+	{
+		width: 70vw;
+		height: 60vw;
+	}
+
+	.content
+	{
+		height: 44vw;
+		width: 54vw;
+		padding: 8vw;
+		font-size: 4vw !important;
+	}
+}
