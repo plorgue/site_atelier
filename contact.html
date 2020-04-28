@@ -18,38 +18,39 @@
 
 </head>
 <body>
-  <header>
-    <!-- Barre de navigation -->
-    <nav>
-      <img id="show-sidenav"  src="img/img-menu.svg" alt="Afficher menu latéral">
-      <a href="index.html">
-        <img id="img-logo" src="img/logosite.png">
-      </a>
-      <ul  class="margin-right">
-        <li id="acc"><a class="textbar" href="index.html">Accueil</a></li>
-        <li id="rea"><a class="textbar" href="index.html#nos_realisations">Nos réalisations</a></li>
-        <li id="ctt"><a class="textbar" href="contact.html">Nous contacter</a></li>
-      </ul>
-    </nav>
-    <!-- Menu des réalisations -->
-    <ul id="nav-rea">
-      <li><a href="portes.html"><p>Portes d'entrée</p></a></li>
-      <li><a href="fenetres.html"><p>Fenêtres et baies vitrées</p></a></li>
-      <li><a href="portes-de-garage.html"><p>Portes de garage</p></a></li>
-      <li><a href="portails.html"><p>Portails</p></a></li>
-      <li><a href="volets.html"><p>Volets</p></a></li>
-    </ul>
-    <!-- Menu latérale pour petit écran -->
-    <div  id="sidenav">
-      <div id="hide-sidenav-btn-container">
-        <img id="hide-sidenav" src="img/img-cls.svg" alt="Enlever menu latérale">
-      </div>
-      <a href="index.html">Accueil</a>
-      <a href="index.html#nos_realisations">Nos réalisations</a>
-      <a href="contact.html">Nous contacter</a>
-    </div>
-  </header>
-  
+  <!-- Navigation -->
+	<header class="nav">
+		<!-- Barre de navigation -->
+		<nav class="nav__bar">
+			<img id="show-sidenav" class="nav__bar__show-sidenav" src="img/img-menu.svg" alt="Afficher menu latéral">
+			<a href="index.html">
+				<img id="img-logo" src="img/logosite.png">
+			</a>
+			<ul>
+				<li><a class="textbar" href="index.html">Accueil</a></li>
+				<li><a class="textbar" href="index.html#nos_realisations">Nos réalisations</a></li>
+				<li class="nav__bar__li-active" ><a class="textbar" href="contact.html">Nous contacter</a></li>
+			</ul>
+		</nav>
+		<!-- Menu des réalisations -->
+		<ul id="nav-rea" class="nav__menu-rea"> <!-- nav-rea -->
+			<li><a href="portes.html"><p>Portes d'entrée</p></a></li>
+			<li><a href="fenetres.html"><p>Fenêtres et baies vitrées</p></a></li>
+			<li><a href="portes-de-garage.html"><p>Portes de garage</p></a></li>
+			<li><a href="portails.html"><p>Portails</p></a></li>
+			<li><a href="volets.html"><p>Volets</p></a></li>
+		</ul>
+		<!-- Menu latérale pour petit écran -->
+		<div  id="sidenav" class="nav__sidenav">
+			<div class="nav__sidenav__btn-container">
+				<img id="hide-sidenav" src="img/img-cls.svg" alt="Enlever menu latérale">
+			</div>
+			<a href="index.html">Accueil</a>
+			<a href="index.html#nos_realisations">Nos réalisations</a>
+			<a href="contact.html">Nous contacter</a>
+		</div>
+	</header>
+
     <h1>Contact</h1>
     <div id="body-container">
         <div id="coord-container">
