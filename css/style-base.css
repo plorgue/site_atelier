@@ -72,6 +72,9 @@ h1
 .nav__bar__li-active{
 	background-color: #e5e5e5;
 }
+.nav__bar__li-active:hover{
+	background-color: #d9d9d9 !important;
+}
 .nav__bar > ul a{
 	color: #555;
 	padding-left: 3vw;
@@ -109,6 +112,7 @@ h1
 .nav__menu-rea a{
 	width: 100%;
 	text-decoration: none;
+	font-weight: lighter;
 }
 .nav__menu-rea a p{
 	color: #555;
