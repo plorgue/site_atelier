@@ -27,14 +27,14 @@
 	<header class="nav">
 		<!-- Barre de navigation -->
 		<nav class="nav__bar">
-			<img id="nav__bar__show-sidenav"  src="img/img-menu.svg" alt="Afficher menu latéral">
+			<img id="show-sidenav" class="nav__bar__show-sidenav" src="img/img-menu.svg" alt="Afficher menu latéral">
 			<a href="index.html">
 				<img id="img-logo" src="img/logosite.png">
 			</a>
 			<ul>
-				<li id="acc"><a class="textbar" href="index.html">Accueil</a></li>
-				<li id="rea"><a class="textbar" href="index.html#nos_realisations">Nos réalisations</a></li>
-				<li id="ctt"><a class="textbar" href="contact.html">Nous contacter</a></li>
+				<li class="nav__bar__li-active" ><a class="textbar" href="index.html">Accueil</a></li>
+				<li><a class="textbar" href="index.html#nos_realisations">Nos réalisations</a></li>
+				<li><a class="textbar" href="contact.html">Nous contacter</a></li>
 			</ul>
 		</nav>
 		<!-- Menu des réalisations -->
@@ -47,7 +47,7 @@
 		</ul>
 		<!-- Menu latérale pour petit écran -->
 		<div  id="sidenav" class="nav__sidenav">
-			<div id="hide-sidenav-btn-container">
+			<div class="nav__sidenav__btn-container">
 				<img id="hide-sidenav" src="img/img-cls.svg" alt="Enlever menu latérale">
 			</div>
 			<a href="index.html">Accueil</a>
