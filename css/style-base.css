@@ -37,7 +37,7 @@ h1
 
 /* header */
 
-header
+.nav
 {
 	width: 100%;
 	position: fixed;
@@ -45,31 +45,32 @@ header
 	z-index: 2;
 }
 
-nav
+.nav__bar
 {
 	width: inherit;
 	background-color: #fff;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-nav ul
+.nav__bar > ul
 {
 	height: 100%;
 	float: right;
 	position: relative;
 	margin: 0;
+	margin-right: 1vw;
 }
 
-nav ul li
+.nav__bar > ul li
 {
 	height: 100%;
 	display: inline-block;
 	margin-left: -4px;
 }
-nav ul li:hover{
+.nav__bar > ul li:hover{
 	background-color: #e5e5e5;
 }
-#show-sidenav{
+#nav__bar__show-sidenav{
 		height: 44px;
 		width: 44px;
 		margin: 13px 0 0 13px;
@@ -95,14 +96,9 @@ nav ul li:hover{
 	cursor: pointer;
 }
 
-#nav-rea li:hover
+.nav__menu-rea li:hover
 {
 	background-color: rgba(0,0,0,0.1);
-}
-
-.margin-right
-{
-	margin-right: 1vw;
 }
 
 .textbar
@@ -115,7 +111,7 @@ nav ul li:hover{
 	line-height: 90px;
 	text-decoration: none;
 }
-#nav-rea
+.nav__menu-rea
 {
 	position: fixed;
 	width: 100%;
@@ -131,13 +127,13 @@ nav ul li:hover{
 	z-index: 3;
 	top: 85px;
 }
-#nav-rea a
+.nav__menu-rea a
 {
 	width: 100%;
 	text-decoration: none;
 }
 
-#nav-rea a p
+.nav__menu-rea a p
 {
 	color: #555;
 	font-size: 19px;
@@ -149,13 +145,17 @@ nav ul li:hover{
 @media only screen and (max-width:801px)
 {
 	/*small screen*/
-	nav{
-		height: 70px;
-	}
 	body{
 		padding-top: 70px;
 	}
-	#show-sidenav{
+	.nav__bar{
+		height: 70px;
+	}
+	.nav__bar ul
+	{
+		display: none;
+	}
+	#nav__bar__show-sidenav{
 		display: inline;
 	}
 	#img-logo
@@ -165,7 +165,7 @@ nav ul li:hover{
 		margin: 0;
 	}
 
-	#sidenav{
+	.nav__sidenav{
 		height: 100%;
 		width: 0;
 		position: fixed;
@@ -176,7 +176,7 @@ nav ul li:hover{
 		transition: 0.5s;
 	}
 
-	#sidenav a{
+	.nav__sidenav > a{
 	  	padding: 8px 8px 8px 32px;
 	  	text-decoration: none;
 	  	font-size: 25px;
@@ -184,31 +184,22 @@ nav ul li:hover{
 	  	display: block;
 	}
 
-	#sidenav a:hover{
+	.nav__sidenav > a:hover{
 			background-color: #e5e5e5;
 	}
 
-	nav ul
-	{
-		display: none;
-	}
 }
 
 @media only screen and (min-width:801px)
 {
 	/*large screen*/
-	nav
-	{
-		height: 90px;
-	}
-
-	body
-	{
+	body{
 		padding-top: 90px;
 	}
-
-	#sidenav
-	{
+	.nav__bar{
+		height: 90px;
+	}
+	.nav__sidenav{
 		display: none;
 	}
 }

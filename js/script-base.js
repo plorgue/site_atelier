@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#show-sidenav').on('click',function(){
+	$('#nav__bar__show-sidenav').on('click',function(){
 		$('#sidenav').css('width','65vw');
 	});
 
