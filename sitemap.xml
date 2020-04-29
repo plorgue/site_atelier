@@ -4,8 +4,11 @@
     <loc>http://lorgue-menuiserie.com/</loc>
   </url>
   <url>
-    <loc>http://lorgue-menuiserie.com/portes.html</loc>
+    <loc>http://lorgue-menuiserie.com/index.html</loc>
+  </url>
   <url>
+    <loc>http://lorgue-menuiserie.com/portes.html</loc>
+  </url>
   <url>
     <loc>http://lorgue-menuiserie.com/fenetres.html</loc>
   </url>
@@ -17,7 +20,7 @@
   </url>
   <url>
     <loc>http://lorgue-menuiserie.com/portes-de-garage.html</loc>
-  <url>
+  </url>
   <url>
     <loc>http://lorgue-menuiserie.com/volets.html</loc>
   </url>

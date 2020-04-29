@@ -259,18 +259,18 @@
 /*-----------------------------------------------------*/
 /****                 third part                    ****/
 /*-----------------------------------------------------*/
-.frth-section__content {
+.thd-section__content {
 	width: 90%;
 	height: auto;
 	padding: 5%;
 	column-count: 2;
 	column-gap: 5%;
 }
-.frth-section__content a {
+.thd-section__content a {
 	display: grid;
 	padding-bottom: 9%;
 }
-.frth-section__content__card {
+.thd-section__content__card {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -281,14 +281,14 @@
 	box-shadow: 0 0 10px #000;
 	border-radius: 10px;
 }
-.frth-section__content__card:hover {
+.thd-section__content__card:hover {
 	box-shadow: 0 0 5px #000;
 }
-.frth-section__content__card > img {
+.thd-section__content__card > img {
 	height: inherit;
 	width: auto;
 }
-.frth-section__content__card > h3{
+.thd-section__content__card > h3{
 	position: absolute;
 	margin: 0;
 	bottom: 17%;
@@ -299,7 +299,7 @@
 	color: #fff;
 	font-size: 2.8rem;
 }
-.frth-section__content__card > span{
+.thd-section__content__card > span{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -311,14 +311,14 @@
 
 @media (min-width: 801px) {
 	/* small screen */
-	.frth-section__content__card {
+	.thd-section__content__card {
 		max-width: calc(50vw - 7.5%);
 	}
 }
 
 @media (max-width: 801px) {
 	/* large screen */
-	.frth-section__content {
+	.thd-section__content {
 		column-count: 1;
 	}
 }
