@@ -7,34 +7,14 @@
 }
 
 /**** parallax ****/
-@media only screen and (min-width: 801px){
-	.parallax{
-		width: 100%;
-		height: 30vh;
-		max-height: 20vw;
-		overflow: hidden;
-
-	}
-	.parallax img{
-		display: block;
-		width: 100%;
-		margin-top: -60%;
-	}
-	#parallax-img-1{
-		margin-top: 0;
-	}
+.parallax {
+	width: 100%;
+	height: 25vw;
+	max-height: 300px;
+	overflow: hidden;
 }
-
-@media only screen and (max-width: 801px){
-	.parallax {
-		width: 100%;
-		height: 18vw;
-		overflow: hidden;
-	}
-	.parallax img	{
-		width: 100%;
-		margin-top: -40vw;
-	}
+.parallax > img{
+	width: inherit;
 }
 
 /*-----------------------------------------------------*/
@@ -259,22 +239,31 @@
 /*-----------------------------------------------------*/
 /****                 third part                    ****/
 /*-----------------------------------------------------*/
+.thd-section__text {
+	width: 90vw;
+	margin: 0 auto 0 auto;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5rem;
+}
 .thd-section__content {
 	width: 90%;
 	height: auto;
-	padding: 5%;
+	padding: 5vw;
 	column-count: 2;
-	column-gap: 5%;
+	column-gap: 5vw;
 }
-.thd-section__content a {
-	display: grid;
-	padding-bottom: 9%;
+.thd-section__content > a {
+	display: inline-block;
+	padding-bottom: 7%;
+	margin-top: 2%;
 }
 .thd-section__content__card {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	height: 350px;
+	box-sizing: border-box;
 	overflow: hidden;
 	background: #eee;
 	border: solid 10px #fff;
@@ -312,12 +301,15 @@
 @media (min-width: 801px) {
 	/* small screen */
 	.thd-section__content__card {
-		max-width: calc(50vw - 7.5%);
+		width: 42.5vw;
 	}
 }
 
 @media (max-width: 801px) {
 	/* large screen */
+	.thd-section__content__card {
+		width: 90vw;
+	}
 	.thd-section__content {
 		column-count: 1;
 	}

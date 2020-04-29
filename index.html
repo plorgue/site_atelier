@@ -68,7 +68,7 @@
 	</section>
 
   <div id="first-parallax" class="parallax">
-		<img id="parallax-img-1" src="img/arbre.png">
+		<img src="img/arbre.png">
 	</div>
 
 	<!-- Deuxième partie (2/4) -->
@@ -114,15 +114,16 @@
 
 	</section>
 
-  <div class="parallax">
-		<img id="parallax-img-2" src="img/arbre.png">
+  <div id="second-parallax" class="parallax">
+		<img src="img/arbre.png">
 	</div>
 
 
 	<!-- Quatrième partie (4/4) -->
 	<section id="nos_realisations" class="fth-section">
-		<h2 class="fth-section__title title-section" style="color: #fff;">Nos  portes, fênetres, volets, portails et portes de garage sont conçus selon vos besoins</h2>
-
+		<h2 class="thd-section__title title-section" style="color: #fff;">Nos  portes, fênetres, volets, portails et portes de garage sont conçus selon vos besoins</h2>
+		<p class="thd-section__text">Situé dans l'agglo de <strong>Limoges</strong> nous réalisons <strong>tout type d'ouverture dans tous les styles</strong>: contemporain, moderne, design, spécial.
+			 <br>Nous pouvons faire des <strong>reproductions d'anciennes menuiseries</strong> ou en créer dans le respect du <strong>patrimoine</strong> (normes de la Fédération des Batiments de France).</p>
 		<div class="thd-section__content">
 
 			<a href="portes.html">
@@ -206,16 +207,17 @@
 
 	$(document).ready(function(){
 
-		window.onscroll=function() {myFunction()};
-		function myFunction(){
-			if(window.matchMedia("screen and (min-width:801px").matches){
-				var scroll = document.documentElement.scrollTop;
-				var scroll1 = (-0.5*scroll-window.innerWidth/4.2)+"px";
-				var scroll2 = (-0.5*scroll+window.innerWidth/14)+"px";
-				document.getElementById("parallax-img-1").style.marginTop = scroll1;
-				document.getElementById("parallax-img-2").style.marginTop = scroll2;
+		$(window).scroll(function(){
+			if(window.matchMedia("(min-width:801px)").matches){
+				var margin1 = ($('#first-parallax').offset().top - $('html').scrollTop() - $(window).height())*(400/$(window).height());
+				var margin2 = ($('#second-parallax').offset().top - $('html').scrollTop() - $(window).height())*(400/$(window).height()) - 400;
+			}else{
+				var margin1 = ($('#first-parallax').offset().top - $('html').scrollTop() - $(window).height())/3;
+				var margin2 = ($('#second-parallax').offset().top - $('html').scrollTop() - $(window).height())/3;
 			}
-		}
+			$('#first-parallax > img').css('margin-top',margin1+"px");
+			$('#second-parallax > img').css('margin-top',margin2+"px");
+		});
 
 		$('.div-effect').mouseenter(function(){
 			$(this).css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2)');
@@ -226,7 +228,6 @@
 		});
 
 		$('.ripple-container').on('mousedown', function(event){
-			console.log("ok");
 			var buttonWidth = $(this).width(),
 			buttonHeight = $(this).height();
 			var radius = Math.max(buttonWidth,buttonHeight);
