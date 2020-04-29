@@ -125,75 +125,52 @@
 	</section>
 
 	<!-- Quatrième partie (4/4) -->
-	<section id="nos_realisations">
-		<!-- TODO: Replacer ce titre -->
-		<h2 class="title-section" style="color: #fff;">Nos  portes, fênetres, volets, portails et portes de garage sont conçus selon vos besoins</h2>
-		<div class="mrow">
-			<div class="carte-container">
-				<div class="carte">
-					<a href="portes.html" >
-						<div class="waves-effect waves-block waves-light div-effect">
-							<img id="door-card"  src="img/door.png">
-							<span class="title">Portes d'entrée</span>
-						</div>
-					</a>
-				</div>
-			</div>
+	<section id="nos_realisations" class="fth-section">
+		<h2 class="fth-section__title title-section" style="color: #fff;">Nos  portes, fênetres, volets, portails et portes de garage sont conçus selon vos besoins</h2>
 
-			<div class="carte-container">
-				<div >
-					<div class="carte">
-						<a href="fenetres.html">
-							<div class="waves-effect waves-block waves-light div-effect">
-								<img id="window-card" src="img/window.jpg">
-								<span class="title">Fenêtres & baies vitrées</span>
-							</div>
-						</a>
-					</div>
+		<div class="frth-section__content">
+
+			<a href="portes.html">
+				<div class="frth-section__content__card">
+					<img src="img/door.png" alt="">
+					<span class="ripple-container"></span>
+					<h3>Porte d'entrée</h3>
 				</div>
-			</div>
+			</a>
+
+			<a href="fenetres.html">
+				<div class="frth-section__content__card">
+					<img src="img/window.jpg" alt="">
+					<span class="ripple-container"></span>
+					<h3>Fenêtres et baies vitrées</h3>
+				</div>
+			</a>
+
+			<a href="portes-de-garage.html">
+				<div class="frth-section__content__card">
+					<img src="img/garage_door.jpg" alt="">
+					<span class="ripple-container"></span>
+					<h3>Portes de garage</h3>
+				</div>
+			</a>
+
+			<a href="volets.html">
+				<div class="frth-section__content__card">
+					<img src="img/shutters.jpg" alt="">
+					<span class="ripple-container"></span>
+					<h3>Volets</h3>
+				</div>
+			</a>
+
+			<a href="portails.html">
+				<div class="frth-section__content__card">
+					<img src="img/gate.jpg" alt="">
+					<span class="ripple-container"></span>
+					<h3>Portails</h3>
+				</div>
+			</a>
+
 		</div>
-		<div class="mrow">
-			<div class="carte-container">
-				<div class="carte">
-					<a href="portes-de-garage.html">
-						<div class="waves-effect waves-block waves-light div-effect">
-							<img id="garage-door-card" src="img/garage_door.jpg">
-							<span class="title">Portes de garage</span>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="carte-container">
-				<div class="carte">
-					<a href="volets.html">
-						<div class="waves-effect waves-block waves-light div-effect">
-							<img id="shutters-card" src="img/shutters.jpg">
-							<span class="title">Volets</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div id="last-carte-container">
-			<div  id="last-carte" class="carte">
-				<a id="port" href="portails.html">
-					<div class="waves-effect waves-block waves-light div-effect">
-						<img id="gate-card" src="img/gate.jpg">
-						<span class="title">Portails</span>
-					</div>
-				</a>
-			</div>
-		</div>
-<!--
-		<a href="">
-			<div id="test-card">
-				<img src="img/door.png" alt="">
-				<div id="voile">
-				</div>
-				<h3>Porte d'entrée</h3>
-			</div>
-		</a> -->
 	</section>
 
 	<!-- bas de page -->
@@ -203,54 +180,73 @@
 	<script src="js/jquery-3.4.0.js"></script>
 	<script type="text/javascript" src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/script-base.js"></script>
-   	<script type="text/javascript">
-   		var slideIndex = 1;
-			showSlides(slideIndex);
+	<script type="text/javascript">
+	var slideIndex = 1;
+	showSlides(slideIndex);
 
-		// Next/previous controls
-		function plusSlides(n) {
- 			showSlides(slideIndex += n);
-		}
-		// Thumbnail image controls
-		function currentSlide(n) {
-  			showSlides(slideIndex = n);
-		}
+	// Next/previous controls
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+	// Thumbnail image controls
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
 
-		function showSlides(n) {
-  			var i;
-  			var slides = document.getElementsByClassName("mySlides");
-  			var dots = document.getElementsByClassName("dot");
-  			if (n > slides.length) {slideIndex = 1}
-  			if (n < 1) {slideIndex = slides.length}
-  			for (i = 0; i < slides.length; i++) {
-      			slides[i].style.display = "none";
-  			}
-  			for (i = 0; i < dots.length; i++) {
-      			dots[i].className = dots[i].className.replace(" active", "");
-  			}
-  			slides[slideIndex-1].style.display = "block";
-  			dots[slideIndex-1].className += " active";
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
 		}
-   		$(document).ready(function(){
-			window.onscroll=function() {myFunction()};
-			function myFunction(){
-				if(window.matchMedia("screen and (min-width:801px").matches){
-					var scroll = document.documentElement.scrollTop;
-					var scroll1 = (-0.5*scroll-window.innerWidth/4.2)+"px";
-					var scroll2 = (-0.5*scroll+window.innerWidth/14)+"px";
-					document.getElementById("parallax-img-1").style.marginTop = scroll1;
-					document.getElementById("parallax-img-2").style.marginTop = scroll2;
-				}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+	}
+
+	$(document).ready(function(){
+
+		window.onscroll=function() {myFunction()};
+		function myFunction(){
+			if(window.matchMedia("screen and (min-width:801px").matches){
+				var scroll = document.documentElement.scrollTop;
+				var scroll1 = (-0.5*scroll-window.innerWidth/4.2)+"px";
+				var scroll2 = (-0.5*scroll+window.innerWidth/14)+"px";
+				document.getElementById("parallax-img-1").style.marginTop = scroll1;
+				document.getElementById("parallax-img-2").style.marginTop = scroll2;
 			}
+		}
 
-   		$('.div-effect').mouseenter(function(){
-				$(this).css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2)');
-			});
-
-			$('.div-effect').mouseleave(function(){
-				$(this).css('box-shadow', '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)');
-			});
+		$('.div-effect').mouseenter(function(){
+			$(this).css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2)');
 		});
-   	</script>
+
+		$('.div-effect').mouseleave(function(){
+			$(this).css('box-shadow', '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)');
+		});
+
+		$('.ripple-container').on('mousedown', function(event){
+			console.log("ok");
+			var buttonWidth = $(this).width(),
+			buttonHeight = $(this).height();
+			var radius = Math.max(buttonWidth,buttonHeight);
+			var x = event.pageX - $(this).offset().left - radius/2 ,
+			y = event.pageY - $(this).offset().top - radius/2;
+			$('.ripple').remove();
+			$(this).prepend("<span class='ripple'></span>");
+			$(".ripple").css({
+				width: radius + 'px',
+				height: radius + 'px',
+				top: y + 'px',
+				left: x + 'px'
+			}).addClass("rippleAnim");
+		});
+	});
+</script>
 </body>
 </html>

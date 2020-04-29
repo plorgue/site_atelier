@@ -1,39 +1,3 @@
-/*#test-card
-{
-	height: 350px;
-	width: 75vw;
-	background: #eee;
-	border: solid 10px #fff;
-	box-shadow: 0 0 10px #333;
-	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	position: relative;
-}
-#test-card > img{
-	height: inherit;
-	width: auto;
-}
-#test-card > h3{
-	position: absolute;
-	text-decoration: none;
-	font-weight: 400;
-	color: #fff;
-	font-size: 2.8rem;
-	margin: 0;
-	bottom: 17%;
-	left: 10%;
-}
-#voile{
-	position: absolute;
-	width: inherit;
-	height: inherit;
-	background-color: #000;
-	opacity: 0.3;
-}
-*/
-/*************** ****************/
 .title-section{
 	padding: 32px 0 32px 3%;
 	width: calc(100% - 64px);
@@ -72,7 +36,10 @@
 		margin-top: -40vw;
 	}
 }
-/**** first part ****/
+
+/*-----------------------------------------------------*/
+/****                 first part                    ****/
+/*-----------------------------------------------------*/
 .fst-section{
 	width: 	100%;
 	height: calc(100vh - 90px);
@@ -125,7 +92,7 @@
 		height: auto;
 	}
 	.fst-section__content > p{
-		width: 70vw;
+		width: 80vw;
 		margin: 0 auto 0 auto;
 		text-align: center;
 		padding: 4% 0 4% 0;
@@ -145,7 +112,9 @@
 	}
 }
 
-/* second part */
+/*-----------------------------------------------------*/
+/****                 second part                   ****/
+/*-----------------------------------------------------*/
 .sec-section{
 	margin-left: 0 auto 0 auto;
 	background-color: #fff;
@@ -213,12 +182,9 @@
 
 /* carousel */
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
-
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -235,18 +201,15 @@
   background-color: rgba(0,0,0,0.5);
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.9);
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -257,7 +220,6 @@
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -266,7 +228,6 @@
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -277,218 +238,117 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
 
-/* second part */
-.mrow
-{
-	margin-right: auto;
-	margin-left: auto;
-	width: auto;
+/*-----------------------------------------------------*/
+/****                 third part                    ****/
+/*-----------------------------------------------------*/
+.frth-section__content {
+	width: 90%;
+	height: auto;
+	padding: 5%;
+	column-count: 2;
+	column-gap: 5%;
+}
+.frth-section__content a {
+	display: grid;
+	padding-bottom: 9%;
+}
+.frth-section__content__card {
+	position: relative;
 	display: flex;
 	justify-content: center;
-}
-
-.carte
-{
-	margin:20px;
-}
-
-.div-effect
-{
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-	border-color: #fff;
-	border-style: solid;
-}
-
-.waves-effect {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  vertical-align: middle;
-  z-index: 1;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out;
-}
-
-.title
-{
-	font-weight: 400;
- 	color: rgba(255,255,255,0.9);
-  	position: absolute;
-  	bottom: 0;
-  	left: 0;
-  	max-width: 100%;
-  	padding-left: 4%;
-  	cursor:pointer;
-  	display: block;
-  	line-height: 32px;
-  	font-size: 2.5vw;
-	margin-bottom: 3vw;
-	margin-left: 2vw;
-}
-
-.waves-effect .waves-ripple {
-  position: absolute;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
-  opacity: 0;
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity;
-  transition-property: transform, opacity, -webkit-transform;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  pointer-events: none;
-}
-
-.waves-effect.waves-light .waves-ripple {
-  background-color: rgba(255, 255, 255, 0.45);
-}
-
-.waves-effect img {
-  position: relative;
-  z-index: -1;
-}
-
-/* Firefox Bug: link not triggered */
-.waves-effect .waves-ripple {
-  z-index: -1;
-}
-
-.div-effect
-{
-	border-radius: 2.5vw;
-	border-width: 0.5vw;
-}
-.carte img
-{
-	margin-bottom: -4%;
-}
-
-/*première ligne*/
-#door-card
-{
-	width: 25vw;
-	height: 30vw;
-}
-
-#window-card
-{
-	width: 52vw;
-	height: 31.2vw;
-}
-
-/*deuxième ligne*/
-#garage-door-card
-{
-	width: 33vw;
-	height: 29.5vw;
-}
-
-#shutters-card
-{
-	width: 45vw;
-	height: 30vw;
-}
-
-/*troisième ligne*/
-#gate-card
-{
-	width: 51vw;
-	height: 31vw;
-}
-
-#inside-door-card
-{
-	width: 26vw;
-	height: 30vw;
-}
-
-#last-carte-container
-{
-	margin: 0;
-	position: relative;
-	width: 100%;
-	height: 40vw;
+	height: 350px;
 	overflow: hidden;
+	background: #eee;
+	border: solid 10px #fff;
+	box-shadow: 0 0 10px #000;
+	border-radius: 10px;
 }
-#last-carte
-{
+.frth-section__content__card:hover {
+	box-shadow: 0 0 5px #000;
+}
+.frth-section__content__card > img {
+	height: inherit;
+	width: auto;
+}
+.frth-section__content__card > h3{
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	margin-top: 0;
+	margin: 0;
+	bottom: 17%;
+	left: 10%;
+	padding-right: 8%;
+	text-decoration: none;
+	font-weight: 400;
+	color: #fff;
+	font-size: 2.8rem;
+}
+.frth-section__content__card > span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-top: -4px;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: inherit;
+	border: solid 4px #fff;
 }
 
-#last-carte img
-{
-	width: auto !important;
-	height: 36vw !important;
-}
-
-
-@media only screen and (max-width: 801px)
-{
+@media (min-width: 801px) {
 	/* small screen */
-	.mrow
-	{
-		display: inline;
+	.frth-section__content__card {
+		max-width: calc(50vw - 7.5%);
 	}
-	.carte-container
-	{
-		margin: 0;
-		position: relative;
-		width: 100%;
-		height: 40vw;
-		overflow: hidden;
-	}
-	.carte
-	{
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		margin-top: 0;
-	}
+}
 
-	.carte img
-	{
-		width: auto !important;
-		height: 36vw !important;
+@media (max-width: 801px) {
+	/* large screen */
+	.frth-section__content {
+		column-count: 1;
 	}
+}
+
+.ripple-container
+{
+  overflow: hidden;
+}
+.ripple
+{
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleAnim
+{
+  animation: rippleEffect 0.5s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes rippleEffect {
+
+  100%
+  {
+    transform: scale(2.4);
+    opacity: 0;
+  }
 }
 
 
