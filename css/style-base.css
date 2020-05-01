@@ -192,8 +192,6 @@ h1
 	}
 }
 
-
-
 footer{
 	height: 100px;
 	width: 100%;
@@ -201,8 +199,6 @@ footer{
 	padding-top: 50px;
 	border-top: 2px solid #b6bCb0;
 }
-
-
 footer > a{
 	color: white;
 	margin-left: 5%;
